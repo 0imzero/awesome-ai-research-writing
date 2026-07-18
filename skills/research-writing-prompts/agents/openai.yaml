@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研写作 Prompt 路由"
+  short_description: "按自然语言智能分配学术翻译、润色、分析与审稿工作流"
+  default_prompt: "使用 $research-writing-prompts 根据我的自然语言需求选择并执行合适的科研写作工作流。"
