@@ -12,7 +12,7 @@
 - 按需加载对应 Prompt，减少无关上下文
 - 提供中文界面、安装说明和来源声明
 
-➡️ [查看 Skill 与安装说明](skills/research-writing-prompts)
+➡️ [查看完整使用说明](docs/research-writing-prompts.md)
 
 ---
 
@@ -837,6 +837,8 @@ Highlight the core novelty. Ensure the connection logic makes sense."""
 ## 本 Fork 新增：科研写作 Prompt 路由 Skill
 
 本 Fork 在保留上游 Prompt 原文的基础上，新增了可由 Codex 直接加载的 [research-writing-prompts Skill](skills/research-writing-prompts)。它会理解自然语言需求，并自动分配到 17 类科研写作工作流，无需记忆固定命令或手动寻找 Prompt。
+
+详细的任务范围、调用示例和安装说明见 [科研写作 Prompt 路由 Skill 使用文档](docs/research-writing-prompts.md)。
 
 - **自然语言路由**：根据“翻译成英文并润色”“压缩一点但别丢信息”“从审稿人视角检查”等表达判断任务。
 - **覆盖范围**：学术翻译、中文重写、缩写与扩写、中英文润色、逻辑检查、去 AI 味、论文架构图、实验绘图推荐、图表标题、实验分析和 Reviewer 审视。
