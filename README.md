@@ -46,6 +46,7 @@
 - [模型选择](#模型选择)
 
 ### Part II: 论文写作相关的 Skills
+- [本 Fork 新增：科研写作 Prompt 路由 Skill](#本-fork-新增科研写作-prompt-路由-skill)
 - [Skills 的配置](#skills-的配置)
 - [Skills 总览](#skills-总览)
 - [使用场景与示例 Prompt](#使用场景与示例-prompt)
@@ -816,6 +817,23 @@ Highlight the core novelty. Ensure the connection logic makes sense."""
 > 🎯 **适用对象**：本部分内容主要面向经常使用 Cursor、Claude Code 等 AI coding 工具的用户
 >
 > 💡 **使用说明**：Agent Skills 是一种可被 AI 助手（如 Claude、Cursor）加载的扩展能力包，内含针对特定任务的流程、规范与模板。在 Claude Code、Cursor 等环境中配置相应 Skill 后，在对话中直接描述需求（如目标会议、repo 路径、要写的章节），即可触发对应流程，无需记忆复杂 prompt
+
+## 本 Fork 新增：科研写作 Prompt 路由 Skill
+
+本 Fork 在保留上游 Prompt 原文的基础上，新增了可由 Codex 直接加载的 [research-writing-prompts Skill](skills/research-writing-prompts)。它会理解自然语言需求，并自动分配到 17 类科研写作工作流，无需记忆固定命令或手动寻找 Prompt。
+
+- **自然语言路由**：根据“翻译成英文并润色”“压缩一点但别丢信息”“从审稿人视角检查”等表达判断任务。
+- **覆盖范围**：学术翻译、中文重写、缩写与扩写、中英文润色、逻辑检查、去 AI 味、论文架构图、实验绘图推荐、图表标题、实验分析和 Reviewer 审视。
+- **格式感知**：优先遵循用户指定的 LaTeX、Word 或纯文本格式；未指定时根据公式、命令和正文特征自动判断。
+- **按需加载**：只读取当前任务对应的 Prompt 参考文件，避免无关内容占用上下文。
+
+### 安装到 Codex
+
+1. 克隆本 Fork：`git clone https://github.com/0imzero/awesome-ai-research-writing.git`
+2. 将 `skills/research-writing-prompts` 复制到 `~/.codex/skills/research-writing-prompts`。
+3. 重新启动 Codex，直接用自然语言描述学术写作需求；也可显式调用 `$research-writing-prompts`。
+
+> **来源与使用说明**：Prompt 来源于上游作者 [Leey21](https://github.com/Leey21) 的本仓库 README。本 Skill 只在保留上游关系和署名的 GitHub Fork 内整理发布，不主张对原 Prompt 拥有权，也不授予新的许可证。若要将 Prompt 文本转载到无关仓库或重新许可，请先取得原作者同意。
 
 ## Skills 的配置
 
