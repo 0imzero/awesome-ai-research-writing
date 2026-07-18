@@ -1,5 +1,21 @@
 > Make AI Writing Better for Everyone
 
+## 🌱 本 Fork 的增强内容
+
+本项目 Fork 自 [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)。
+
+在保留上游 Prompt 内容和作者署名的基础上，本 Fork 新增了可供 Codex 本地安装的 `research-writing-prompts` Skill，主要改进包括：
+
+- 将 17 类科研写作 Prompt 打包为结构化 Skill
+- 支持根据自然语言自动分配翻译、润色、缩写、实验分析和审稿等工作流
+- 自动识别 LaTeX、Word 与纯文本格式
+- 按需加载对应 Prompt，减少无关上下文
+- 提供中文界面、安装说明和来源声明
+
+➡️ [查看 Skill 与安装说明](skills/research-writing-prompts)
+
+---
+
 ## 📖 为什么做这个项目
 
 当你第三次调试同一个润色 prompt 时，隔壁组的同学可能已经用现成的模板改完了三篇论文。

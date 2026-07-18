@@ -18,7 +18,7 @@ Fork 已在 `agent/add-research-writing-skill` 分支加入 `research-writing-pr
 
 ### README
 
-在 Part II 的 Skills 内容中加入“科研写作 Prompt 路由 Skill”中文介绍，说明：
+在 README 顶部加入“本 Fork 的增强内容”，让访客首先看到上游来源、Fork 维护者新增内容和 Skill 入口；同时在 Part II 的 Skills 内容中保留“科研写作 Prompt 路由 Skill”详细中文介绍，说明：
 
 - Skill 目录与核心能力；
 - 支持自然语言自动分配 17 类学术写作工作流；
@@ -26,6 +26,10 @@ Fork 已在 `agent/add-research-writing-skill` 分支加入 `research-writing-pr
 - 来源、Fork 关系和无许可证背景下的使用提醒。
 
 不重写原作者已有 README 内容，仅增加 Fork 维护者的扩展说明。
+
+### GitHub About
+
+将仓库 About 描述设置为：“基于 awesome-ai-research-writing，新增支持自然语言路由的 Codex 科研写作 Skill。”让搜索结果和仓库侧栏直接展示本 Fork 的差异。
 
 ### Skill 界面元数据
 
